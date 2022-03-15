@@ -28,8 +28,9 @@ public class ControllerA {
 
 	/**
 	 * POSTメソッド
+	 * http://localhost:8080/controller/post_method
 	 * 
-	 * @param param1　URL リクエストで ?post_param=~ で送信できるパラメータ
+	 * @param param1　URL リクエストのパラメータ
 	 */
 	@PostMapping("/post_method")
 	public String postMethod(@RequestParam("post_param") String param1) {
