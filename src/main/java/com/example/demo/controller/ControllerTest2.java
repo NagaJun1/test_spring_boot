@@ -1,5 +1,6 @@
 package com.example.demo.controller;
 
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -20,7 +21,7 @@ public class ControllerTest2 {
 	 * @param request <SampleJsonRequest> リクエスト
 	 * @return response <SampleJson2Response> 
 	 */
-	@GetMapping(Path.GET_SAMPLE_JSON)
+	@GetMapping(path = Path.GET_SAMPLE_JSON, consumes = MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<SampleJson2Response> getSampleJson(
 			@RequestBody SampleJsonRequest request) {
 
