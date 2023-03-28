@@ -19,6 +19,8 @@ docker build --build-arg JAR_FILE=build/libs/test_spring_boot-0.0.1-SNAPSHOT.jar
 ※ビルドによって生成された`.jar`が`test_spring_boot-0.0.1-SNAPSHOT.jar`である場合のコマンド。
 
 〇コンテナの起動
-`docker run -p 8081:8080 test_spring_boot`
+```
+docker run -p 8081:8080 test_spring_boot
+```
 ※コンテナ内の`spring boot アプリ`はポート`8080`で稼働し、ローカル環境では`http://localhost:8081`で接続できる様になる。
 
