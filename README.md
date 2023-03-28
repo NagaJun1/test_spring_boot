@@ -13,7 +13,9 @@ https://qiita.com/NagaJun/items/4adf80d2bcd931938fe8
 
 #### docker コマンド
 〇イメージの作成
-`docker build --build-arg JAR_FILE=build/libs/test_spring_boot-0.0.1-SNAPSHOT.jar -t test_spring_boot .`
+```
+docker build --build-arg JAR_FILE=build/libs/test_spring_boot-0.0.1-SNAPSHOT.jar -t test_spring_boot .
+```
 ※ビルドによって生成された`.jar`が`test_spring_boot-0.0.1-SNAPSHOT.jar`である場合のコマンド。
 
 〇コンテナの起動
